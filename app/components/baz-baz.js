@@ -28,6 +28,11 @@ class MyClazz extends Component {
     window.console.log('clicked baz baz yo!');
     this.actions.up();
   }
+
+  init() {
+    super.init(...arguments);
+    this.color = 'green';
+  }
 }
 
 export default connect(stateToComputed, dispatchToActions)(MyClazz);
