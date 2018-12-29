@@ -29,8 +29,8 @@ class MyClazz extends Component {
     this.actions.up();
   }
 
-  init() {
-    super.init(...arguments);
+  constructor() {
+    super(...arguments);
     this.color = 'green';
   }
 }
